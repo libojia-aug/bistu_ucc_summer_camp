@@ -15,5 +15,12 @@ def maxCount(maxCount=100):
         a, b = b, a + b
         count = count + 1
 
-maxNum(100)
-maxCount(10)
+def maxCountList(maxCount=100):
+	fiblist = [0,1]
+	while len(fiblist) < maxCount:
+		fiblist.append(fiblist[-1]+fiblist[-2])
+	print fiblist
+		
+# maxNum(100)
+# maxCount(10)
+maxCountList(100)
